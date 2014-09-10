@@ -2,6 +2,7 @@
 var dailymiles;
 dailymiles = 30;
 
+//The cost of gas per gallon
 var costpergallon;
 costpergallon = 3.50;
 

@@ -23,3 +23,5 @@ var monthlycost = Math.round((1/mpg) * costpergallon * (dailymiles * 30.417) * 1
 //This is the message that will display in the console of your browser
 console.log(("Your monthly total cost for gas is $") + monthlycost);
 console.log(("Your yearly total for gas is $") + monthlycost * 12);
+console.log(("If you have multiple vehicles, just simply input the information for the other vehicle " +
+               "       and then add the two totals together "));

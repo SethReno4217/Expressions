@@ -14,6 +14,7 @@ daysperfillup = 14;
 var sizeoftank;
 sizeoftank = 16;
 
+//This will calculate your MPG. Days per fill up divided by the size of your tank multiplied by your daily miles rounded.
 var mpg = Math.round(((daysperfillup/sizeoftank) * (dailymiles)) *100)/100;
 
 var monthlycost = Math.round((1/mpg) * costpergallon * (dailymiles * 30.417) * 100)/100;

@@ -10,6 +10,7 @@ costpergallon = 3.50;
 var daysperfillup;
 daysperfillup = 14;
 
+//The size of the gas tank in your vehicle
 var sizeoftank;
 sizeoftank = 16;
 

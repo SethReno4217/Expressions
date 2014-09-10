@@ -10,3 +10,5 @@ daysperfillup = 14;
 
 var sizeoftank;
 sizeoftank = 16;
+
+var mpg = Math.round(((daysperfillup/sizeoftank) * (dailymiles)) *100)/100;

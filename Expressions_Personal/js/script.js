@@ -6,6 +6,7 @@ dailymiles = 30;
 var costpergallon;
 costpergallon = 3.50;
 
+//The amount of days in between fill ups
 var daysperfillup;
 daysperfillup = 14;
 

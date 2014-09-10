@@ -20,4 +20,5 @@ var mpg = Math.round(((daysperfillup/sizeoftank) * (dailymiles)) *100)/100;
 //This will calculate your expected monthly cost
 var monthlycost = Math.round((1/mpg) * costpergallon * (dailymiles * 30.417) * 100)/100;
 
+//This is the message that will display in the console of your browser
 console.log(("Your monthly total cost for gas is $") + monthlycost);

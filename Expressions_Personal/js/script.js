@@ -1,4 +1,4 @@
-
+//Estimate of how many miles you drive a day
 var dailymiles;
 dailymiles = 30;
 

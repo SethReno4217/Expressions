@@ -46,5 +46,15 @@ var shingleArea;
         shingleArea = sLength * sWidthFeet;
             console.log('Shingle area: ' + shingleArea.toFixed(2) + ' square feet.');
 
+//*Calculates the amount of shingles needed
 var numberOfShinglesRequired;
-numberOfShinglesRequired = Math.ceil(roofArea / shingleArea);
+        numberOfShinglesRequired = Math.ceil(roofArea / shingleArea);
+
+//*Enter the price of a shingle
+var shingleCost;
+        shingleCost = 4;
+
+//*Calculates the total cost
+var totalShingleCost;
+        totalShingleCost = shingleCost * numberOfShinglesRequired;
+            console.log('Total Cost of shingles: $' + totalShingleCost.toFixed(2));

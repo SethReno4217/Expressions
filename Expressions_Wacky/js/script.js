@@ -11,5 +11,5 @@ var BirthYear;
         BirthYear = 90;
 
 //*Birthday Calculation
-var BirthDay;
-        BirthDay = BirthMonth + 18 * 25
+var DateofBirth;
+        DateofBirth = BirthMonth + 18 * 25

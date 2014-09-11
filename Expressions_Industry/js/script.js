@@ -39,4 +39,13 @@ var sWidth;
 
 //*Calculates the shingle width to feet
 var sWidthFeet;
-        sWidthFeet = sWidth / 12.; 
+        sWidthFeet = sWidth / 12.;
+
+//*Calculates the area of the shingles on your roof
+var shingleArea;
+shingleArea = sLength * sWidthFeet;
+
+console.log('Shingle area: ' + shingleArea.toFixed(2) + ' square feet.');
+
+var numberOfShinglesRequired;
+numberOfShinglesRequired = Math.ceil(roofArea / shingleArea);

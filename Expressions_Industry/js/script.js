@@ -28,3 +28,4 @@ var roofArea;
         roofArea = 2 * HouseLength * hypotenuse;
             console.log('roof area: ' + roofArea.toFixed(2) + ' square feet.');
 
+//*Length of the roof shingle (s)

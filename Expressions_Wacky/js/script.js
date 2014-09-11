@@ -13,12 +13,12 @@ var BirthYear;
 
 //*Birthday Calculation, DO NOT CHANGE
 var var1;
-        var1 = BirthMonth + 18 * 25 - 333 * 8 - 554 / 2 + BirthDate * 5 + 692 * 20 + BirthYear - 32940;
+        var1 = BirthMonth + 18; // * 25 - 333 * 8 - 554 / 2 + BirthDate * 5 + 692 * 20 + BirthYear - 32940;
 
 var var2;
-        var2 = BirthMonth * 25;
+        var2 = var1 * 25;
 
 var var3;
-        var3 = 
+        var3 = var2 - 333
 
 console.log(("Your Exact Date of Birth is") + DateofBirth);

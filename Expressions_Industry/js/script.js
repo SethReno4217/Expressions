@@ -22,3 +22,5 @@ var hypotenuse;
 //*Enter the Length of your house
 var HouseLength;
         HouseLength = 50;
+
+//*Calculates the total roof area

@@ -25,5 +25,6 @@ var HouseLength;
 
 //*Calculates the total roof area
 var roofArea;
-roofArea = 2 * HouseLength * hypotenuse;
-console.log('roof area: ' + roofArea.toFixed(2) + ' square feet.');
+        roofArea = 2 * HouseLength * hypotenuse;
+            console.log('roof area: ' + roofArea.toFixed(2) + ' square feet.');
+

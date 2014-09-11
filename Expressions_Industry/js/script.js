@@ -11,5 +11,7 @@ var cosPitch;
 
 //*Input the width of your house
 var HouseWidth;
-        HouseWidth = 20
+        HouseWidth = 20;
             console.log('house width: ' + HouseWidth + ' feet.');
+
+//*Calculates the hypotenuse of your roof

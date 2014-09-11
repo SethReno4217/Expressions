@@ -8,8 +8,7 @@ var costpergallon = 3.50;
 var daysperfillup = 14;
 
 //The size of the gas tank in your vehicle
-var sizeofgastank;
-sizeofgastank = 16;
+var sizeofgastank = 16;
 
 //This will calculate your MPG. Days per fill up divided by the size of your tank multiplied by your daily miles rounded.
 var mpg = Math.round(((daysperfillup/sizeofgastank) * (dailymiles)) *100)/100;

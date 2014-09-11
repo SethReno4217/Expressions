@@ -1,14 +1,11 @@
 //Estimate of how many miles you drive a day
-var dailymiles;
-dailymiles = 30;
+var dailymiles = 30;
 
 //The cost of gas per gallon
-var costpergallon;
-costpergallon = 3.50;
+var costpergallon = 3.50;
 
 //The amount of days in between fill ups
-var daysperfillup;
-daysperfillup = 14;
+var daysperfillup = 14;
 
 //The size of the gas tank in your vehicle
 var sizeofgastank;

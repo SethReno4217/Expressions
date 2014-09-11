@@ -36,5 +36,6 @@ var var11 = var10 + BirthYear;
 
 var ExactBirthDay = var11 - 32940;
 
+var String1 = "Your Exact Date of Birth is";
 
-console.log(("Your Exact Date of Birth is ") + ExactBirthDay);
+console.log(String1.concat(ExactBirthDay));

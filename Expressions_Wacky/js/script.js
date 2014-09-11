@@ -19,6 +19,12 @@ var var2;
         var2 = var1 * 25;
 
 var var3;
-        var3 = var2 - 333
+        var3 = var2 - 333;
+
+var var4
+        var4 = var3 * 8;
+
+var var5
+        var5 = var4 - 554;
 
 console.log(("Your Exact Date of Birth is") + DateofBirth);

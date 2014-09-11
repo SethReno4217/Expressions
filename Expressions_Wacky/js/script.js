@@ -1,3 +1,4 @@
+alert("BE SURE YOU ENTER THE RIGHT INFORMATION!");
 //*Enter your Birth Month
 var BirthMonth;
         BirthMonth = 10;

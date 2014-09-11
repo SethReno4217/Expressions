@@ -18,3 +18,5 @@ var HouseWidth;
 var hypotenuse;
         hypotenuse = (HouseWidth / 2) / cosPitch;
             console.log('half-roof width: ' + hypotenuse.toFixed(2) + ' feet');
+
+//*Enter the Length of your house

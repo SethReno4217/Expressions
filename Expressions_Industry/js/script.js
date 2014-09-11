@@ -16,5 +16,5 @@ var HouseWidth;
 
 //*Calculates the hypotenuse of your roof
 var hypotenuse;
-hypotenuse = (HouseWidth / 2) / cosPitch;
-console.log('half-roof width: ' + hypotenuse.toFixed(2) + ' feet');
+        hypotenuse = (HouseWidth / 2) / cosPitch;
+            console.log('half-roof width: ' + hypotenuse.toFixed(2) + ' feet');

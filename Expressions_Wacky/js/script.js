@@ -6,10 +6,10 @@ var BirthMonth;
 var BirthDate;
         BirthDate = 24;
 
-//*Last 2 digits of your Birth Year
+//*Enter the LAST 2 digits of your Birth Year
 var BirthYear;
         BirthYear = 90;
 
-//*Birthday Calculation
+//*Birthday Calculation, DO NOT CHANGE
 var DateofBirth;
         DateofBirth = BirthMonth + 18 * 25

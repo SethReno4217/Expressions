@@ -1,3 +1,4 @@
-
+//*Enter your Birth Month
 var BirthMonth;
-        BirthMonth = 10 + 18
+        BirthMonth = 10;
+

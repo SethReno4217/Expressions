@@ -12,29 +12,29 @@ var BirthYear;
         BirthYear = 90;
 
 //*Birthday Calculation, DO NOT CHANGE
-var var1;
-        var1 = BirthMonth + 18; // * 25 - 333 * 8 - 554 / 2 + BirthDate * 5 + 692 * 20 + BirthYear - 32940;
+var var1 = BirthMonth + 18
 
-var var2;
-        var2 = var1 * 25;
+var var2 = var1 * 25;
 
-var var3;
-        var3 = var2 - 333;
+var var3 = var2 - 333;
 
-var var4;
-        var4 = var3 * 8;
+var var4 = var3 * 8;
 
-var var5;
-        var5 = var4 - 554;
+var var5 = var4 - 554;
 
-var var6;
-        var6 = var5 / 2;
+var var6 = var5 / 2;
 
-var var7;
-        var7 = var6 + BirthDate;
+var var7 = var6 + BirthDate;
 
-var var8;
-        var8 = var7 * 5;
+var var8 = var7 * 5;
+
+var var9 = var8 + 692;
+
+var var10 = var9 * 20;
+
+var var11 = var10 + BirthYear;
+
+var ExactBirthDay = var11 - 32940;
 
 
-console.log(("Your Exact Date of Birth is") + DateofBirth);
+console.log(("Your Exact Date of Birth is ") + ExactBirthDay);

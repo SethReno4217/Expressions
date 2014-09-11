@@ -31,3 +31,12 @@ var roofArea;
 //*Enter the length of a roof shingle (s)
 var sLength;
         sLength = 1.5;
+
+//*Enter the width of a shingle
+var sWidth;
+        sWidth = 10;
+            console.log('Shingle width in inches: ' + sWidth + ' inches.');
+
+//*Calculates the shingle width to feet
+var sWidthFeet;
+        sWidthFeet = sWidth / 12.; 

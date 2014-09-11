@@ -37,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.09090909" vertical-offset="0" max-vertical-offset="825">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -317,7 +317,7 @@
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09090909" vertical-offset="0" max-vertical-offset="825">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
           <folding />
         </state>
       </provider>

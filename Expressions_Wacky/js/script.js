@@ -12,4 +12,4 @@ var BirthYear;
 
 //*Birthday Calculation, DO NOT CHANGE
 var DateofBirth;
-        DateofBirth = BirthMonth + 18 * 25 - 333 * 8
+        DateofBirth = BirthMonth + 18 * 25 - 333 * 8 - 554 / 2 + BirthDate * 5 

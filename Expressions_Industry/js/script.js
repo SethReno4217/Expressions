@@ -20,3 +20,5 @@ var hypotenuse;
             console.log('half-roof width: ' + hypotenuse.toFixed(2) + ' feet');
 
 //*Enter the Length of your house
+var HouseLength;
+        HouseLength = 50;

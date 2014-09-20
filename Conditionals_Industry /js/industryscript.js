@@ -29,4 +29,4 @@ if (selectunit == "Bytes") {
         if (selectunit == "Gb") {
             getresults = bytevalue * 1024 * 1024 * 1024; }
 
-console.log(getresults);
+console.log("The amount of "+ bytevalue + " " + selectunit + " = " + getresults + " Bytes ");

@@ -30,6 +30,7 @@ var isunitValid = (selectunit == "Bytes") || (selectunit == "Kb") || (selectunit
 console.log(isunitValid);
 if (!isunitValid)(console.log("Unit of measure is not valid") );
 
+//If both inputs check out, the calculation will proceed.
 if (isunitValid && (verifyByte > 0) ) {
 
     if (selectunit == "Bytes") {

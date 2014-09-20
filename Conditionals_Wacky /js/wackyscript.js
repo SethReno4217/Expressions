@@ -27,20 +27,11 @@ responseMessage = (verifyStreet > 0 ? responseMessage : "Street number is not a 
 
 if (responseMessage.length > 0) (console.log(responseMessage));
 
-    if ((verifyStreet > 0) && (verifyAge > 0) ) {
+if ((verifyStreet > 0) && (verifyAge > 0) ) {
 
-        symptomModulus = (verifyStreet * verifyAge) % symptoms.length;
+    symptomModulus = (verifyStreet * verifyAge) % symptoms.length;
 
-        console.log("Based on my street number and my age, my symptom is " + symptoms[symptomModulus] );
-
-
-
-
-
-
-
-
-
+    console.log("Based on my street number and my age, my symptom is " + symptoms[symptomModulus] );
 
 }
 

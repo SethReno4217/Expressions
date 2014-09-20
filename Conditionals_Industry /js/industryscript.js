@@ -1,8 +1,8 @@
 var getresults;
 
-var bytevalue = prompt("Enter the amount of Bytes","10000") ;
+var bytevalue = prompt("Enter the amount of Bytes","1024") ;
 
-var selectunit = prompt("Enter the unit of measurement","Gb") ;
+var selectunit = prompt("Enter the unit of measurement (Kb,Mb,Gb) ","Mb") ;
 
 if (selectunit == "Bytes") {
     getresults = bytevalue; }

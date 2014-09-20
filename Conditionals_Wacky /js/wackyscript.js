@@ -1,3 +1,4 @@
+//List of Symptoms
 var symptoms = ["Fever","Coughing","Boils","Loss of motor skills","Blood in urine","Weakness","Cold Sweat",
     "Chest Pain","Dizziness","Rash","Tenderness","Soreness","Vomiting","Hair loss","Irritable Bowls","Joint Pain"];
 
@@ -27,13 +28,14 @@ if ((verifyStreet > 0) && (verifyAge > 0) ) {
 
     symptomModulus = (verifyStreet * verifyAge) % symptoms.length;
 
-    console.log("Based on my street number and my age, my symptom is " + symptoms[symptomModulus] );
+    console.log("Based on your street number and your age, your symptom is a " + symptoms[symptomModulus] + "." );
 
 }
 else {
     console.log("I can't tell whats wrong with you.");
 }
-console.log("I think I should mention that I am not a doctor.");
+console.log("I think I should mention that I am not a doctor. I just get a feeling you have a "
+    + symptoms[symptomModulus] + "." );
 
 
 

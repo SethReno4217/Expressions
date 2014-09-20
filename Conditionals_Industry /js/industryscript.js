@@ -4,7 +4,7 @@ var responseMessage = "";
 
 var bytevalue = prompt("Enter the amount of Bytes","1024") ;
 
-var selectunit = prompt("Enter the unit of measurement (Kb,Mb,Gb) ","Mb") ;
+var selectunit = prompt("Enter the unit of measurement (Bytes,Kb,Mb,Gb) ","Mb") ;
 
 //Validate that byte value is a number
 var verifyByte = parseFloat(bytevalue);
@@ -14,6 +14,7 @@ if (responseMessage.length > 0) (console.log(responseMessage));
 //Validate that select unit is a string
 var isunitValid = (selectunit == "Bytes") || (selectunit == "Kb") || (selectunit == "Mb") || (selectunit == "Gb");
 console.log(isunitValid);
+if (!isunitValid)(console.log("Unit of measure is not valid") );
 
 if (selectunit == "Bytes") {
     getresults = bytevalue; }

@@ -16,19 +16,25 @@ var isunitValid = (selectunit == "Bytes") || (selectunit == "Kb") || (selectunit
 console.log(isunitValid);
 if (!isunitValid)(console.log("Unit of measure is not valid") );
 
-if (selectunit == "Bytes") {
-    getresults = bytevalue; }
+if (isunitValid && (bytevalue > 0) ) {
 
-        else
-        if (selectunit == "Kb") {
-            getresults = bytevalue * 1024; }
+    if (selectunit == "Bytes") {
+        getresults = bytevalue; }
 
-        else
-        if (selectunit == "Mb") {
-            getresults = bytevalue * 1024 * 1024; }
+            else
+            if (selectunit == "Kb") {
+                getresults = bytevalue * 1024; }
 
-        else
-        if (selectunit == "Gb") {
-            getresults = bytevalue * 1024 * 1024 * 1024; }
+            else
+            if (selectunit == "Mb") {
+                getresults = bytevalue * 1024 * 1024; }
 
-console.log("The amount of "+ bytevalue + " " + selectunit + " = " + getresults + " Bytes ");
+            else
+            if (selectunit == "Gb") {
+                getresults = bytevalue * 1024 * 1024 * 1024; }
+
+    console.log("The amount of "+ bytevalue + " " + selectunit + " = " + getresults + " Bytes ");
+                        }
+else {
+    console.log("One or more inputs are invalid. No calculation is performed.");
+}

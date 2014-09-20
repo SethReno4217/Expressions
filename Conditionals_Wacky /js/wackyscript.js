@@ -1,6 +1,5 @@
 var symptoms = ["Fever","Coughing","Boils","Loss of motor skills","Blood in urine","Weakness","Cold Sweat",
     "Chest Pain","Dizziness","Rash","Tenderness","Soreness","Vomiting","Hair loss","Irritable Bowls","Joint Pain"];
-console.log("We have a list of " + symptoms.length + " symptoms." );
 
 var age = prompt("Enter your Age", "23");
 
@@ -8,10 +7,7 @@ var streetNumber = prompt("Enter your street number", "1024");
 
 var responseMessage = "";
 
-var getresults;
-
 var symptomModulus;
-
 
 //Validate that the age value is a number
 var verifyAge = parseInt(age);
@@ -34,8 +30,10 @@ if ((verifyStreet > 0) && (verifyAge > 0) ) {
     console.log("Based on my street number and my age, my symptom is " + symptoms[symptomModulus] );
 
 }
-
-
+else {
+    console.log("I can't tell whats wrong with you.");
+}
+console.log("I think I should mention that I am not a doctor.");
 
 
 

@@ -3,22 +3,50 @@ var symptoms = ["Fever","Coughing","Boils","Loss of motor skills","Blood in urin
 console.log("We have a list of " + symptoms.length + " symptoms." );
 
 var age = prompt("Enter your Age", "23");
+
 var streetNumber = prompt("Enter your street number", "1024");
 
+var responseMessage = "";
+
+var getresults;
+
+var symptomModulus;
+
+
 //Validate that the age value is a number
-var verifyAge = parseFloat(age);
+var verifyAge = parseInt(age);
+
 responseMessage = (verifyAge > 0 ? responseMessage : "Age is not a valid number");
+
 if (responseMessage.length > 0) (console.log(responseMessage));
 
-//Validate that street number is a string
-var isunitValid = (selectunit == "Bytes") || (selectunit == "Kb") || (selectunit == "Mb") || (selectunit == "Gb");
-console.log(isunitValid);
-if (!isunitValid)(console.log("Unit of measure is not valid") );
+//Validate that the age value is a number
+var verifyStreet = parseInt(streetNumber);
+
+responseMessage = (verifyStreet > 0 ? responseMessage : "Street number is not a valid number");
+
+if (responseMessage.length > 0) (console.log(responseMessage));
+
+    if ((verifyStreet > 0) && (verifyAge > 0) ) {
+
+        symptomModulus = (verifyStreet * verifyAge) % symptoms.length;
+
+        console.log("Based on my street number and my age, my symptom is " + symptoms[symptomModulus] );
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
 
 
 //Math.floor((Math.random() * 10) + 1);
-var ageModulus = 1024 % 23;
-
-
-console.log("The age modulus of my street number is " + (ageModulus) );
-console.log("Therefore I have the following symptoms: " + symptoms[ageModulus] );

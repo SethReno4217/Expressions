@@ -16,7 +16,7 @@ var GbExponent = 3 ;
 
 //Validate that byte value is a number
 var verifyByte = parseFloat(bytevalue);
-responseMessage = (bytevalue > 0 ? responseMessage : "bytevalue is not a valid number");
+responseMessage = (verifyByte > 0 ? responseMessage : "bytevalue is not a valid number");
 if (responseMessage.length > 0) (console.log(responseMessage));
 
 //Validate that select unit is a string
@@ -24,22 +24,22 @@ var isunitValid = (selectunit == "Bytes") || (selectunit == "Kb") || (selectunit
 console.log(isunitValid);
 if (!isunitValid)(console.log("Unit of measure is not valid") );
 
-if (isunitValid && (bytevalue > 0) ) {
+if (isunitValid && (verifyByte > 0) ) {
 
     if (selectunit == "Bytes") {
-        getresults = bytevalue; }
+        getresults = verifyByte; }
 
             else
             if (selectunit == "Kb") {
-                getresults = bytevalue * Math.pow(baseConstantByte, KbExponent); }
+                getresults = verifyByte * Math.pow(baseConstantByte, KbExponent); }
 
             else
             if (selectunit == "Mb") {
-                getresults = bytevalue * Math.pow(baseConstantByte, MbExponent); }
+                getresults = verifyByte * Math.pow(baseConstantByte, MbExponent); }
 
             else
             if (selectunit == "Gb") {
-                getresults = bytevalue * Math.pow(baseConstantByte, GbExponent); }
+                getresults = verifyByte * Math.pow(baseConstantByte, GbExponent); }
 
 
     console.log("The amount of "+ bytevalue + " " + selectunit + " = " + getresults + " Bytes ");

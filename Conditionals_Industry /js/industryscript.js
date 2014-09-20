@@ -6,6 +6,14 @@ var bytevalue = prompt("Enter the amount of Bytes","1024") ;
 
 var selectunit = prompt("Enter the unit of measurement (Bytes,Kb,Mb,Gb) ","Mb") ;
 
+var baseConstantByte = 1024;
+
+var KbExponent = 1 ;
+
+var MbExponent = 2 ;
+
+var GbExponent = 3 ;
+
 //Validate that byte value is a number
 var verifyByte = parseFloat(bytevalue);
 responseMessage = (bytevalue > 0 ? responseMessage : "bytevalue is not a valid number");
@@ -23,15 +31,16 @@ if (isunitValid && (bytevalue > 0) ) {
 
             else
             if (selectunit == "Kb") {
-                getresults = bytevalue * 1024; }
+                getresults = bytevalue * Math.pow(baseConstantByte, KbExponent); }
 
             else
             if (selectunit == "Mb") {
-                getresults = bytevalue * 1024 * 1024; }
+                getresults = bytevalue * Math.pow(baseConstantByte, MbExponent); }
 
             else
             if (selectunit == "Gb") {
-                getresults = bytevalue * 1024 * 1024 * 1024; }
+                getresults = bytevalue * Math.pow(baseConstantByte, GbExponent); }
+
 
     console.log("The amount of "+ bytevalue + " " + selectunit + " = " + getresults + " Bytes ");
                         }

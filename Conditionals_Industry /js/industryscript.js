@@ -12,7 +12,8 @@ responseMessage = (bytevalue > 0 ? responseMessage : "bytevalue is not a valid n
 if (responseMessage.length > 0) (console.log(responseMessage));
 
 //Validate that select unit is a string
-
+var isunitValid = (selectunit == "Bytes") || (selectunit == "Kb") || (selectunit == "Mb") || (selectunit == "Gb");
+console.log(isunitValid);
 
 if (selectunit == "Bytes") {
     getresults = bytevalue; }

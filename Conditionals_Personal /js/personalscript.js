@@ -1,3 +1,4 @@
+//Trading Blows Game
 var playerHP = prompt("Enter your Health Points ", "50");
 
 var selectWeapon = prompt("Select your weapon (Sword, Axe, Bow) ", "Sword");
@@ -32,8 +33,8 @@ if (!isWeaponValid)(console.log("You Have not chosen an appropriate Weapon!") );
 //If both inputs check out, the calculation will proceed.
 if (isWeaponValid && (verifyPlayerHP > 0) ) {
     currentEnemyHP = Math.floor(verifyPlayerHP * 1.1);
-    console.log("The enemy has " + currentEnemyHP + " to start");
-    console.log("You have " + currentPlayerHP + " to start");
+    console.log("The enemy has " + currentEnemyHP + " health points to start");
+    console.log("You have " + currentPlayerHP + " health points to start");
 
     var totalRounds = 0;
 

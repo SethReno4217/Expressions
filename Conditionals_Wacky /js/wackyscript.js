@@ -40,4 +40,3 @@ console.log("I think I should mention that I am not a doctor. I just get a feeli
 
 
 
-//Math.floor((Math.random() * 10) + 1);

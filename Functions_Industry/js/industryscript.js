@@ -40,20 +40,20 @@ function compute() {
 
                         var sCost = getVal('shingleCost');
 
+                        if (hasValue(sCost)) {
 
+                            sCost = parseFloat(sCost);
 
+                            log('Cost per shingle: $' + sCost.toFixed(2));
 
+                            var totalShingleCost = (sCost * numberOfShinglesRequired);
 
+                            log('Total Cost of shingles: $' + totalShingleCost.toFixed(2));
 
-
-
-
-
-
+                        }
+                    }
+                }
+            }
+        }
     }
-}
-}
-}
-}
-}
 }

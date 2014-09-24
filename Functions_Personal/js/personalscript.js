@@ -29,6 +29,7 @@ function findFactors() {
 
         }
 
+    //Returns the absolute value of both variables 
     value1 = Math.abs( value1 );
 
     value2 = Math.abs( value2 );
@@ -38,6 +39,8 @@ function findFactors() {
     var answer = "1";
 
 
+    //Common factors calculation. The calculation will continue to look for common factors until it finds all common
+    //factors
 
     for ( var x = 2; x < Math.min( value1, value2 ); x ++ ) {
 
@@ -62,6 +65,7 @@ function findFactors() {
 
     }
 
+    //Logs all the common factors
     console.log( "value1 = " + value1 + "\nvalue2 = " + value2 + "\nCommon Factors: " + answer );
 
 }

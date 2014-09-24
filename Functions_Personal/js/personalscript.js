@@ -2,11 +2,13 @@ function findFactors() {
 
     var noCommonfactors = [0];
 
-    var value1 = 20;
+    //Enter 2 numbers to find common factors
+    var value1 = prompt("Enter the First Factor", "105");
 
-    var value2 = 85;
+    var value2 = prompt("Enter the Second Factor ", "550");
 
 
+    //Determines if the values entered are actual numbers
     if ( isNaN( value1 ) || isNaN( value2 ) ) {
 
         alert( "Please enter valid number values" );
@@ -18,6 +20,7 @@ function findFactors() {
     }
 
 
+        //If the values = 0, and alert will display.
         if ( value1 == 0 || value2 == 0 ) {
 
             alert( "No common factors" );

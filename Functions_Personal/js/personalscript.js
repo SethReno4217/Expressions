@@ -2,9 +2,9 @@ function findFactors() {
 
     var noCommonfactors = [0];
 
-    var value1 = 50;
+    var value1 = 20;
 
-    var value2 = 125;
+    var value2 = 85;
 
 
     if ( isNaN( value1 ) || isNaN( value2 ) ) {
@@ -26,16 +26,40 @@ function findFactors() {
 
         }
 
+    value1 = Math.abs( value1 );
+
+    value2 = Math.abs( value2 );
+
+
+
+    var answer = "1";
+
+
+
+    for ( var x = 2; x < Math.min( value1, value2 ); x ++ ) {
+
+        var check1 = value1 / x;
+
+
+
+        if ( check1 == Math.round( check1 ) ) {
+
+            var check2 = value2 / x;
+
+            if ( check2 == Math.round( check2 ) ) {
+
+                answer += ", " + x;
 
 
 
 
-}
+            }
 
-}
+        }
 
-}
-console.log( "value1 = " + value1 + "\nvalue2 = " + value2 + "\nCommon Factors: " + answer );
+    }
+
+    console.log( "value1 = " + value1 + "\nvalue2 = " + value2 + "\nCommon Factors: " + answer );
 
 }
 console.log(findFactors());

@@ -18,7 +18,10 @@ function compute() {
             var hypotenuse = (width / 2) / cosPitch;
             log('half-roof width: ' + hypotenuse.toFixed(2) + ' feet');
 
-
+            var length = getVal('houseLength');
+            if (hasValue(length)) {
+                var roofArea = 2 * area(length, hypotenuse);
+                log('roof area: ' + roofArea.toFixed(2) + ' square feet.');
 
 
 

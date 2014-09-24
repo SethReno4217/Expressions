@@ -23,6 +23,22 @@ function compute() {
                 var roofArea = 2 * area(length, hypotenuse);
                 log('roof area: ' + roofArea.toFixed(2) + ' square feet.');
 
+                var sLength = getVal('shingleLength');
+                if (hasValue(sLength)) {
+                    var sWidth = getVal('shingleWidth');
+                    log('Shingle width in inches: ' + sWidth + ' inches.');
+                    if (hasValue(sWidth)) {
+                        sWidth = inchesToFeet(sWidth);
+
+                        var shingleArea = area(sLength, sWidth);
+
+                        log('Shingle area: ' + shingleArea.toFixed(2) + ' square feet.');
+
+                        var numberOfShinglesRequired = Math.ceil(roofArea / shingleArea);
+
+                        log('Shingles required: ' + numberOfShinglesRequired);
+
+                        var sCost = getVal('shingleCost');
 
 
 

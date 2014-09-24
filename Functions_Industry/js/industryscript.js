@@ -31,7 +31,7 @@ function compute() {
                 var roofArea = 2 * area(length, hypotenuse);
                 log('roof area: ' + roofArea.toFixed(2) + ' square feet.');
 
-                //Input for the length og the shingles
+                //Inputs for the shingle length and width
                 var sLength = getVal('shingleLength');
                 if (hasValue(sLength)) {
                     var sWidth = getVal('shingleWidth');
@@ -39,14 +39,17 @@ function compute() {
                     if (hasValue(sWidth)) {
                         sWidth = inchesToFeet(sWidth);
 
+                        //Calculates your shingle area
                         var shingleArea = area(sLength, sWidth);
 
                         log('Shingle area: ' + shingleArea.toFixed(2) + ' square feet.');
 
+                        //Calculates the amount of shingles needed
                         var numberOfShinglesRequired = Math.ceil(roofArea / shingleArea);
 
                         log('Shingles required: ' + numberOfShinglesRequired);
 
+                        //Calculates the total cost of all the shingles needed
                         var sCost = getVal('shingleCost');
 
                         if (hasValue(sCost)) {

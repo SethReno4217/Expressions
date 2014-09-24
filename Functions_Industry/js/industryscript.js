@@ -1,3 +1,5 @@
+
+
 function log(message) {
     console.log(message.toLowerCase());
 }
@@ -56,4 +58,26 @@ function compute() {
             }
         }
     }
+}
+
+function getVal(id) {
+    //console.log(id);
+    return document.getElementById(id).value;
+}
+
+function len(someString) {
+    return someString.toString().length;
+}
+
+function hasValue(value) {
+    var exists = (len(value) > 0);
+    return exists;
+}
+
+function inchesToFeet(inches) {
+    return (inches / 12).toFixed(2);
+}
+
+function area(length, width) {
+    return length * width;
 }

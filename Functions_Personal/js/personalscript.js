@@ -29,7 +29,7 @@ function findFactors() {
 
         }
 
-    //Returns the absolute value of both variables 
+    //Returns the absolute value of both variables
     value1 = Math.abs( value1 );
 
     value2 = Math.abs( value2 );
